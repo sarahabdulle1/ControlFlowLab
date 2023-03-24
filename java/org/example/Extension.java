@@ -20,6 +20,8 @@ public class Extension {
         Scanner secondreader = new Scanner(System.in);
         String enterTemperatureString = secondreader.nextLine();
         int enteredTemperature = Integer.valueOf(enterTemperatureString);
+//      FUTURE TIPS: use [reader.nextInt()] instead of [nextLine() and  Integer.valueOf()]
+
 
 //        If rainy AND above 15 degrees. Wear a light raincoat. Under 15 degrees. Wear a waterproof winter coat.
 //        If sunny AND above 18 degrees. Wear sunglasses. Under 18 degrees. Wear warm clothing. Do not be deceived by the sun!
@@ -40,5 +42,7 @@ public class Extension {
         } else if (enteredTemperature < 22 && describeWeather.equals("cloudy")) {
             System.out.println("Dress warm.");
         }
+//        FUTURE TIPS: 'BOUNCER PATTERN': separate the if statements instead of a long if statement.
+//                      They should logically follow from each other and rely on each other
     }
 }
